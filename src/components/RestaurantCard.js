@@ -7,11 +7,19 @@ const RestaurantCard = (props) => {
 
   return (
     <div className="relative m-4 p-4 w-[250px] rounded-lg bg-white shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
-      <img
-        className="w-full h-[150px] object-cover rounded-t-lg"
-        alt="res-logo"
-        src={CDN_URL + cloudinaryImageId}
-      />
+      {cloudinaryImageId ? (
+        <img
+          className="w-full h-[150px] object-cover rounded-t-lg"
+          alt="res-logo"
+          src={CDN_URL + cloudinaryImageId}
+        />
+      ) : (
+        <img
+          className="w-full h-[150px] object-cover rounded-t-lg"
+          alt="res-logo"
+          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/os9mo5crsabyp8o9syg0"
+        />
+      )}
       <div className="p-4">
         <h3 className="font-bold text-xl text-gray-800">{name}</h3>
         <p className="text-gray-600 text-sm mb-2">{cuisines.join(", ")}</p>
@@ -31,7 +39,7 @@ const RestaurantCard = (props) => {
 export const withPromtedLabel = (RestaurantCard) => {
   return (props) => {
     return (
-        <div className="relative">
+      <div className="relative">
         <label className="absolute top-0 left-0 z-50 bg-orange-400 text-white text-xs font-bold uppercase rounded-br-lg py-1 px-2 m-2">
           Promoted
         </label>
