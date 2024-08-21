@@ -1,5 +1,5 @@
 **1. Comprehensive Monolith Architecture** <br/>
-_Swiggy Clone_: Developed a mini Swiggy clone that integrates every key feature of the React library, showcasing a robust understanding of React's capabilities. This project serves as a perfect example of how reconciliation and virtual DOM work in React, optimizing performance and user experience.<br/><br/>
+_Swiggy Clone_: Developed a mini Swiggy clone that integrates every key feature of the React library, utilizing live Swiggy APIs exclusively. The project serves as a perfect example of how reconciliation and virtual DOM work in React, optimizing performance and user experience.<br/><br/>
 
 **2. Tailwind CSS Integration**<br/>
 _Responsive UI_: Implemented Tailwind CSS to design a responsive and modern UI that mirrors Swiggy’s aesthetics.<br/><br/>
