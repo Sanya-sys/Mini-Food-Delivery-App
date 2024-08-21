@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+**1. Comprehensive Monolith Architecture** <br/>
+_Swiggy Clone_: Developed a mini Swiggy clone that integrates every key feature of the React library, showcasing a robust understanding of React's capabilities. This project serves as a perfect example of how reconciliation and virtual DOM work in React, optimizing performance and user experience.<br/><br/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**2. Tailwind CSS Integration**<br/>
+_Responsive UI_: Implemented Tailwind CSS to design a responsive and modern UI that mirrors Swiggy’s aesthetics.<br/><br/>
 
-## Available Scripts
+**3. Efficient Routing with React Router**<br/>
+_React-Router-Dom_: Leveraged React Router for client-side routing, ensuring smooth and dynamic navigation across the application.
+_Lazy Loading_: Enhanced performance by implementing lazy loading of routes, reducing the initial load time and improving the user experience.<br/><br/>
 
-In the project directory, you can run:
+**4.Higher-Order Functions for Code Enhancement**<br/>
+_Reusable Components_: Utilized higher-order functions to enhance and reuse components, adhering to DRY (Don't Repeat Yourself) principles and promoting clean, maintainable code.<br/><br/>
 
-### `npm start`
+**5. Adherence to the Single Responsibility Principle**<br/>
+_Modular Design_: Followed the Single Responsibility Principle (SRP) to create modular components, ensuring that each component has a clear, focused purpose.<br/><br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**6. Custom Hooks for Reusable Logic**<br/>
+_Efficient State Management_: Developed custom hooks to encapsulate reusable logic, promoting code reusability and separation of concerns.<br/><br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**7. Context API to Resolve Props Drilling**<br/>
+_Simplified State Sharing_: Employed the Context API to avoid props drilling and simplify state sharing across deeply nested components. This implementation made the code cleaner and easier to manage.<br/><br/>
 
-### `npm test`
+**8. State Management with Lifting State Up**<br/>
+_Profile Debugging_: Implemented the technique of lifting state up to ensure data consistency across components. This approach facilitated easier debugging, particularly in profile management and other critical state-dependent features.<br/><br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**9. Redux for Scalable State Management**<br/>
+_Redux Architecture_: Integrated Redux as the state management library, following best practices in its architecture. This includes the use of actions, reducers, and middleware for handling side effects, ensuring a predictable and centralized state management solution.<br/><br/>
