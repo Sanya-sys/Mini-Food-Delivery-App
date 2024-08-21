@@ -5,7 +5,7 @@ _Swiggy Clone_: Developed a mini Swiggy clone that integrates every key feature 
 _Responsive UI_: Implemented Tailwind CSS to design a responsive and modern UI that mirrors Swiggy’s aesthetics.<br/><br/>
 
 **3. Efficient Routing with React Router**<br/>
-_React-Router-Dom_: Leveraged React Router for client-side routing, ensuring smooth and dynamic navigation across the application.
+_React-Router-Dom_: Leveraged React Router for client-side routing, ensuring smooth and dynamic navigation across the application.<br/>
 _Lazy Loading_: Enhanced performance by implementing lazy loading of routes, reducing the initial load time and improving the user experience.<br/><br/>
 
 **4.Higher-Order Functions for Code Enhancement**<br/>
