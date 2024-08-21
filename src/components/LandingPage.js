@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import RestaurantCard, { withPromtedLabel } from "./RestaurantCard";
 
 const LandingPage = () => {
@@ -28,11 +29,6 @@ const LandingPage = () => {
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
     );
     const jsonInfo = await data.json();
-    console.log(
-      "ss",
-      jsonInfo?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants
-    );
 
     setListOfRestraunt(
       jsonInfo?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
@@ -77,13 +73,15 @@ const LandingPage = () => {
         </button>
       </div>
       <div className="flex flex-wrap">
-        {filteredRestaurant.map((restaurant, index) =>
-          restaurant.info?.avgRating > "4.3" ? (
-            <RestaurantCardPromoted resData={restaurant.info} key={index} />
-          ) : (
-            <RestaurantCard resData={restaurant.info} key={index} />
-          )
-        )}
+        {filteredRestaurant.map((restaurant, index) => (
+          <Link key={restaurant?.info.id} to={"/restaurant/" + restaurant.info.id}>
+            {restaurant.info?.avgRating > "4.3" ? (
+              <RestaurantCardPromoted resData={restaurant.info} key={index} />
+            ) : (
+              <RestaurantCard resData={restaurant.info} key={index} />
+            )}
+          </Link>
+        ))}
       </div>
     </div>
   );
