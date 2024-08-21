@@ -24,10 +24,10 @@ _Simplified State Sharing_: Employed the Context API to avoid props drilling and
 _Profile Debugging_: Implemented the technique of lifting state up to ensure data consistency across components. This approach facilitated easier debugging, particularly in profile management and other critical state-dependent features.<br/><br/>
 
 **9. Redux for Scalable State Management**<br/>
-_Redux Architecture_: Integrated Redux as the state management library, following best practices in its architecture. This includes the use of actions, reducers, and middleware for handling side effects, ensuring a predictable and centralized state management solution.<br/><br/><br/><br/><br/>
+_Redux Architecture_: Integrated Redux as the state management library, following best practices in its architecture. This includes the use of actions, reducers, and middleware for handling side effects, ensuring a predictable and centralized state management solution.<br/><br/><br/><br/>
 
 
-**Screenshots:**
+**Screenshots:** <br/>
 
 <img width="1493" alt="image" src="https://github.com/user-attachments/assets/332e49fa-642f-4728-ab49-babe1d778188"> <br/><br/><br/>
 
