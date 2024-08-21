@@ -1,11 +1,15 @@
 import { LOGO_URL } from "../utils/constants";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/userContext";
 import { useSelector } from "react-redux";
 
 const Header = () => {
   const cartItems = useSelector((store) => store.cart.items);
   const onlineStatus = useOnlineStatus();
+
+  const { loggedInUser } = useContext(UserContext);
 
   return (
     <div className="flex items-center justify-between bg-white shadow-md p-4 border-b border-gray-200">
@@ -54,8 +58,8 @@ const Header = () => {
         <button className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition duration-300">
           Login
         </button>
-        <button className="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-100 transition duration-300">
-          Sign Up
+        <button className="bg-white  text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-100 transition duration-300">
+          {loggedInUser}
         </button>
       </div>
     </div>
