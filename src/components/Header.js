@@ -1,16 +1,18 @@
 import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 import { useSelector } from "react-redux";
 
 const Header = () => {
   const cartItems = useSelector((store) => store.cart.items);
+  const onlineStatus = useOnlineStatus();
 
   return (
     <div className="flex items-center justify-between bg-white shadow-md p-4 border-b border-gray-200">
       <div className="flex items-center">
         <img className="w-24 h-auto" src={LOGO_URL} alt="Logo" />
       </div>
-      <div className="hidden lg:flex items-center space-x-8 text-gray-700">
+      <div className="hidden lg:flex items-center space-x-8 text-gray-700 ml-32">
         <div className="text-lg font-medium hover:text-orange-500 transition duration-300">
           <Link to="/">Home</Link>
         </div>
@@ -21,7 +23,7 @@ const Header = () => {
           <Link to="/">Services</Link>
         </div>
         <div className="text-lg font-medium hover:text-orange-500 transition duration-300">
-          <Link to="/">Contact</Link>
+          Online Status: {onlineStatus ? "✅" : "🔴"}
         </div>
       </div>
       <div className="flex items-center space-x-4">

@@ -1,12 +1,14 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import LandingPage from "./components/LandingPage";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import CartData from "./components/CartData";
 import reportWebVitals from "./reportWebVitals";
+
+// lazy loading
+const CartData = lazy(() => import("./components/CartData"));
 
 const appRouter = createBrowserRouter([
   {
@@ -23,7 +25,11 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/cart",
-        element: <CartData />,
+        element: (
+          <Suspense fallback={<h1>Loading....</h1>}>
+            <CartData />
+          </Suspense>
+        ),
       },
     ],
   },

@@ -40,7 +40,7 @@ const ItemList = ({ items }) => {
               className="w-16 h-16 object-cover rounded-lg"
               alt={item.card.info.name}
             />
-            {!location.pathname === "/cart" && (
+            {!(location.pathname === "/cart") && (
               <button
                 onClick={() => handleAddItem(item)}
                 className="absolute bottom-2 right-2 p-2 bg-orange-500 text-white rounded-full shadow-lg hover:bg-orange-600 transition-colors duration-200"
